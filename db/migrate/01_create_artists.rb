@@ -7,7 +7,7 @@ class CreateArtists < ActiveRecord::Migration[5.1]
 
   def change
     create_table :artists do |t|
-      binding.pry
+      # binding.pry
       t.string :name
       t.string :genre
       t.interger :age
