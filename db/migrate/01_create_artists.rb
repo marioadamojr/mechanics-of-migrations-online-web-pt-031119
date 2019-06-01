@@ -1,4 +1,4 @@
-class CreateArtists < ActiveRecord::Migration [5.2]
+class CreateArtists < ActiveRecord::Migration[5.1]
   def up
   end
 
@@ -7,10 +7,10 @@ class CreateArtists < ActiveRecord::Migration [5.2]
 
   def change
     create_table :artists do |t|
-      binding.pry
+      # binding.pry
       t.string :name
       t.string :genre
-      t.interger :age
+      t.integer :age
       t.string :hometown
     end
   end
